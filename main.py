@@ -33,8 +33,6 @@ async def predict(data: InputText):
     # Decision Layer
     if ai_score >= 0.80:
         verdict = "AI Generated"
-    elif ai_score >= 0.70:
-        verdict = "Likely AI / Uncertain"
     else:
         verdict = "Human Written"
         
